@@ -1,0 +1,383 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* extra resetting------------*/
+
+/* makes all images responsive */
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+/* CLASS
+    html, body{
+    line-height: 1.5rem;
+    font-size: 14px;
+    font-family: sans-serif;
+    color: ·2d2d2d;
+*/
+
+/* Typography */
+
+html, body{
+        font-size: 14px;
+        font-family: 'Raleway',Arial, sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        color: #2d2d2d;
+        line-height: 1.5rem;
+}
+
+h1 {
+    font-family: 'Playfair Display', arial, sans-serif;
+    font-weight: normal;
+    font-style: italic;
+    padding-top: 40px;
+}
+h1 span{
+    font-weight: bold;
+    font-style:normal;
+}
+h3 {
+    font-family: 'Raleway';
+    font-weight: 300;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 2;
+    padding: 20px;
+}
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* HEADER NAVIGATION BAR */
+.navigation {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 16vh;
+    margin: 0 30px;
+    /* padding: 90px; */
+    flex-wrap: wrap;
+    flex-basis: 50%;
+    position: -webkit-sticky;
+}
+
+.navigation a {
+    color: red;
+    text-decoration: none;
+}
+
+.navigation ul {
+    display: flex;
+    justify-content: space-around;
+    /* padding-top: 20px; */
+    /* padding-bottom: 10px; */
+    margin: 0px;
+    flex-basis: 100%;
+    order:3;
+    border-top: 1px solid;
+ }
+ .navigation ul li {
+    padding: 0 10px;
+    color: orangered;
+    justify-content: space-evenly;
+    text-decoration: none;
+}
+.logo img {
+    width: 90px;
+    height: 80px;
+    min-width: 100px;
+    flex-basis: 50%;
+    /* align-self: left; */
+    order: 1;
+}
+.icon img {
+    width: 100px;
+    height: 50px;
+    min-width: 100px;
+    flex-basis: 50%;
+    /* align-self: right; */
+    order: 2;
+}
+.container {
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-evenly;
+      }
+
+/* BANNER */
+.banner {
+    background-image: url(./images/banner-girl.png), url(./images/flower-bkgd.jpg);
+    background-repeat: no-repeat, repeat-x;
+    background-position: center 40px, center;
+    background-size: contain, auto 100%;
+    height: 400px;
+    padding: 200px;
+    margin: 0px;  
+       }
+.bannertext{
+    text-align: center;
+    font-size: 30px;
+    justify-content: center;
+    color: white;
+    position: relative;
+    left: 40%;
+    bottom: 60px;
+    line-height: 1;
+    width: 80%;
+    display: flex;
+    
+}
+
+/* HANDCRAFT */
+.hand{
+    height: 34.6vh;
+    align-items: center;
+    justify-content: center;
+    /* display: flexbox; */
+    font-size: 35px;
+    /* margin: 30px; */
+    /* padding: 50px; */
+  }
+.text{
+    text-align: center;
+    font-size: 40px;
+    color: black;
+    justify-content: center;
+    line-height: 50px;
+     }
+
+/* ITEMS SECTION */
+.container2{
+    /* height: 100vh; */
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-evenly;
+
+}
+.container2 div {
+    /* border-right: 8px solid white; */
+    margin-top: 10px;
+}
+
+#container2text{
+    font-family: 'Raleway', arial, sans-serif;
+    font-weight: 400;
+    font-style: bold;
+    font-size: 25px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.men{
+    background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)),url(images/mens-category.jpg);
+    flex-basis: 100%;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 215px;
+  }
+.trend{
+    background:linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), url(images/trends-category.jpg);
+    flex-basis: 45%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right-color: 10px solid white;
+    border-left: 0;
+    height: 212px;
+
+}
+.glasses{
+    background:linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), url(images/glasses-category.jpg);
+    flex-basis: 50%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sale{
+    background:linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), url(images/sale-category.jpg);
+    flex-basis: 50%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right-color: 8px solid white;
+    height: 210px;
+}
+.bags{
+    background:linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), url(images/bags-category.jpg);
+    flex-basis: 50%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.womens{
+    background:linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), url(images/womens-category.jpg);
+    flex-basis: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 215px;
+}
+
+/* MOST LOVE BAR */
+
+
+
+
+/* NEWSLETTER */
+.newsletter{
+    background-image: url("./images/wave-bkgd.jpg");
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    /* height: 300px; */
+    padding: 3.2rem 0;
+    margin-bottom: 8px;
+    
+}
+.newsletter form{
+    /* position: relative; */
+    display: block;
+    text-align: center;
+}
+.text3{
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    justify-content: center;
+    line-height: 2;
+    font-weight: 0px
+
+    }
+#textbox{
+    width: 350px;
+    height: 40px;
+    font-family: 'Raleway';
+    font-size: 13px;
+    border-radius: 50px;
+    text-align: left;
+    position: relative;
+    border: none;
+    padding-left: 20px;
+}
+#buttom{
+    position: relative;
+    left: 124px;
+    /* top: 3.8px; */
+    bottom: 38px;
+    border-radius: 50px;
+    width: 100px;
+    height: 35px;
+    font-family: 'Raleway';
+    color: white;
+    background-color: red;
+
+
+}
+
+/* FOOTER */
+.site_footer{
+    background-color: #242424;
+    padding: 3rem;
+    color: white;
+}
+.container3{
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    flex: row;
+    align-items: center;
+    justify-content: space-evenly;
+    line-height: 2;
+}
+
+.footer_content{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    
+}
+.footer_content2{
+    /* text-align: center; */
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    
+}
+.footer_content2 a: hover{
+    color:
+
+} 
