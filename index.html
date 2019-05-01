@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="fonts/fonts.css">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="aloha.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <title>Aloha Appareal Co.</title>
 </head>
 
@@ -29,14 +30,14 @@
         </header>
 <!-- BANNER  -->
 <section class="banner">
-        <div>
-        <p class="bannertext">NEW COLLECTION</p>
-        <p class="bannertext">Spring/Summer 2019</p>
+        <div class="bannertext">
+        <p class="new">NEW COLLECTION</p>
+        <p class="summer">Spring/Summer 2019</p>
         </div>
     </section>
 
 <!-- HANDCRAFT STYLES -->
-<section #styles class="text" class="hand">
+<section id="ABOUT" class="text" class="hand">
         <div class="hand">
             <h1>Hand-craft
             <span>Styles</span>
@@ -47,50 +48,105 @@
     </section>
 
 <!-- ITEMS SECTION -->
-    <section class="container2">
-            <div class="men" id="container2text">men's</div>
-            <div class="trend" id="container2text">trends</div>
-            <div class="glasses" id="container2text">glasses</div>
-            <div class="sale" id="container2text">sale</div>
-            <div class="bags" id="container2text">bags</div>
-            <div class="womens" id="container2text">women's</div>
+    <section id="SHOP" class="container2">
+            <div class="men"><span><a href="#">men's</a></span></div>
+            <div class="trend"><span><a href="#">trends</a></span></div>
+            <div class="glasses"><span><a href="#">glasses</a></span></div>
+            <div class="sale"><span><a href="#">sale</a></spam></div></div>
+            <div class="bags"><span><a href="#">bags</a></span></div>
+            <div class="womens"><span><a href="#">women's</a></span></div>
     </section>
 
  <!-- MOST LOVE BAR -->
-    <section>
-            <h1 class="text">most-loved 
+<section id="FEATURED">
+    <div class="text-carousel">
+            <h1 class="text5">Most-Loved 
                 <span>Products</span></h1>
-    
-        </section>
+    </div>
+    <div class="main-carousel" data-flickity='{ "cellAlign": "right", "contain": true, "wrapAround": true, "prevNextButtons": false}'>
+       <div class="carousel-cell"> 
+            <img src="images/stretch-knit-dress.jpg" alt="black dress">
+            <p class="text-carousel"> dresses </p>
+            <h2>Stretch Knit Dress</h2>
+            <p class="price">$169.00</p>
+        </div>
+        <div class="carousel-cell">  
+            <img src="images/cotton-blue-shirt.jpg" alt="blue shirt">
+            <p class="text-carousel">shirts</p>
+            <h2>Cotton Blue Shirt</h2>
+            <p class="price">$  89.00</p>
+        </div>
+        <div class="carousel-cell">
+            <img src="images/checked-stretch-dress.jpg" alt="red dress">
+            <p class="text-carousel">dresses</p>
+            <h2>Checked Stretch Dress</h2>
+            <p class="price">$129.00</p>
+        </div>
+        <div class="carousel-cell">
+            <img src="images/blue-hipster-backpack.jpg" alt="blue backpack">
+            <p class="text-carousel">bags</p>
+            <h2>Blue Hipster Backpack</h2>
+            <p class="price">$69.00</p>
+        </div>
+        <div class="carousel-cell">
+            <img src="images/demin-overall-shorts.jpg" alt="denim overall short">
+            <p class="text-carousel">denim</p>
+            <h2>Denim Overall Shorts</h2>
+            <p class="price">$89.00</p>
+        </div>
+        <div class="carousel-cell">
+            <img src="images/pink-dotted-dress.jpg" alt="pink dress">
+            <p class="text-carousel">dresses</p>
+            <h2>Pink Dotted Dress</h2>
+            <p class="price">$99.00</p>
+        </div>
+        <div class="carousel-cell">
+            <img src="images/blue-silk-dress.jpg" alt="blue silk dress">
+            <p class="text-carousel">dresses</p>
+            <h2>Blue Silk Dress</h2>
+            <p class="price">$119.00</p>
+        </div>
+        <div class="carousel-cell">
+            <img src="images/cotton-yellow-tshirt.jpg" alt="cotton yellow tshirt">
+            <p class="text-carousel">shirts</p>
+            <h2>Cotton Yellow Tshirt</h2>
+            <p class="price">$39.00</p>
+        </div>
+    </div>
+</section>
+        
 <!-- NEWSLETTER -->
-<section class="newsletter">
-        <h1 class="text">Sign-up for <span>Updates</span></h1>
+<section id="UPDATES" class="newsletter">
+        <h1 class="text4">Sign-up for <span>Updates</span></h1>
         <p class="text3">Stay updated on our latest products releases, be first to find out
             about upcoming sales, and get free style tips from our blog.Unsubscribe at any time.
         </p>
-        <form> <input type="email" name="Your Email" value="Your Email" class="textbox" id="textbox">
+        <form id="buttom2"> <input type="email" name="Your Email" placeholder="Your Email" class="textbox" id="textbox">
             <input type="submit" value="Suscribe" id="buttom">
         </form>
     </section>
 
 <!-- FOOTER -->
         <footer>
-        <div class="site_footer" class="footer_content" class="container3" >
-            <div>
-                <p>© 2019 Aloha Apparel Co.<br>Powered by HTML and CSS.</p>
-                <p>604-604-6040.<a href="info@alohaapparel.com">info@alohaapparel.com</a></p>
-                <p>1490 W Broadway <br>Vancouver, BC, Canada</p>
+        <div class="site_footer">
+            <div class="footer_content">
+                <div class="footer_contenta">© 2019 Aloha Apparel Co.Powered by HTML and CSS.</div>
+                <div class="footer_contentb">604-604-6040 <br><a href="info@alohaapparel.com"> info@alohaapparel.com</a></div>
+                <div class="footer_contentc">1490 W Broadway <br>Vancouver, BC, Canada</div>
             </div>
                 <ul class="footer_content2">
-                    <li><a href="#"><i class="fab fa-facebook-f" ></i></li>
-                        <li><a href="#"><i class="fab fa-facebook-f" ></i></li>
-                    <li><i class="fab fa-twitter"></i></li>
-                    <li><i class="fab fa-instagram"></i></li>
-                    <li><i class="fab fa-pinterest"></i></li>
+                    <li><i class="fab fa-facebook-f"></i><span class="footer-social"><a href="#">Facebook</a></span></li>
+                    <li><i class="fab fa-twitter"></i><span class="footer-social"><a href="#">Twitter</a></span></li>
+                    <li><i class="fab fa-instagram"></i><span class="footer-social"><a href="#">Instagram</a></span></li>
+                    <li><i class="fab fa-pinterest"></i><span class="footer-social"><a href="#">Pinterest</a></span></li>
                 </ul>
-        </div>
+        </div>  
             </footer>
 
+            <script src="js/script.js"></script>
+        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
+  
 
 </body>
+</html>
