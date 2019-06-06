@@ -99,15 +99,17 @@ h2 {
     text-align: center;
 }
 
-h3 {
+.hand p {
     font-family: 'Raleway';
     font-weight: 300;
     font-style: normal;
-    font-size: 15px;
+    font-size: 2rem;
     line-height: 2;
-    padding: 20px;
+    padding: 20px 200px; 
     text-align: center;
 }
+
+
 /* apply a natural box layout model to all elements, but allowing components to change */
 html {
   box-sizing: border-box;
@@ -692,16 +694,11 @@ a {
             justify-content: center;
             line-height: 50px;
              }
-             h3 {
-                font-family: 'Raleway';
-                font-weight: 300;
-                font-style: normal;
-                font-size: 1.5rem;
+             .hand p {
                 line-height: 2;
-                justify-content: center;
-                padding: 20px;
-                padding-left: 300px;
-                padding-right: 300px;
+                font-size: 1.2rem;
+                padding: 20px 50px;
+        
             }
             h1 {
                 font-family: 'Playfair Display', arial, sans-serif;
