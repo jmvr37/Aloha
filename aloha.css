@@ -95,7 +95,7 @@ h2 {
     margin-bottom: 1rem;
     font-family: Playfair,serif;
     line-height: 1;
-    color: #e2574c;
+    color: #db3a26;
     text-align: center;
 }
 
@@ -133,7 +133,7 @@ html {
 }
 
 .navigation a {
-    color: red;
+    color: #ee0000;
     text-decoration: none;
 }
 
@@ -150,7 +150,7 @@ html {
  }
  .navigation ul li {
     padding: 0 10px;
-    color: orangered;
+    color: #ee0000;
     justify-content: space-evenly;
     text-decoration: none;
 }
@@ -434,7 +434,7 @@ a {
     height: 39px;
     font-family: 'Raleway';
     color: white;
-    background-color: #e2574c;
+    background-color: #db3a26;
     }
 
 /* FOOTER */
@@ -488,7 +488,7 @@ a {
     }
 
 .footer_content2 li:hover{
-    color: #e2574c;
+    color: #db3a26;
     }
 
 .footer-social{
@@ -737,7 +737,7 @@ a {
         text-transform: none;
         }
        
-
+    }
     /* NEWSLETTER SECTION */
     @media screen and (min-width: 600px){
         .newsletter{
@@ -781,7 +781,8 @@ a {
         position: relative;
         border: none;
         padding-left: 20px;
-}
+        }
+
         #buttom{
             position: absolute;
             /* left: 124px; */
@@ -862,3 +863,4 @@ a {
         .footer-social{
             display: flex;
         }
+    }
