@@ -1,3 +1,5 @@
+//wrap the code on the javascript//
+
 document.addEventListener("DOMContentLoaded", function() {
   const navLinks = document.querySelectorAll(".navigation ul li a");
   navLinks.forEach(function(element) {
@@ -27,3 +29,4 @@ form.addEventListener("submit", function(event) {
   ) {
   }
 });
+//add if and else//
